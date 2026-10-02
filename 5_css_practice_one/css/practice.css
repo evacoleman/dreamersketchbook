@@ -1,0 +1,29 @@
+
+body {
+    background-color: #1695A3;
+    color: #FFFFFF;
+
+}
+
+ol li {
+    color: #EB7F00;
+}
+
+h3 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+ul li {
+    font-size: 40px;
+    font-weight: bold;
+    color: #EB7F00;
+}
+
+p {
+    color: #EB7F00
+}
+
+section footer{
+    text-decoration: none;
+}

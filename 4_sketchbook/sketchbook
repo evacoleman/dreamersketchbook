@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/sketchbook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+New:wght@400;700&display=swap" rel="stylesheet">
+    <title>Interactive Sketchbook</title>
+  </head>
+  <body>
+    <h2>Carry on <em>dreamer</em>....</h2>
+    <h2>you're the only one who can</h2>
+    <nav>
+      <a href="../index.html">home</a>
+      <a href="../1_about/1_about.html">about</a>
+      <a href="../2_quote/2_quote.html">quote</a>
+      <a href="../3_inspo/3_inspo.html">inspirations</a>
+      <a href="sketchbook.html">dreamer's sketchbook</a>
+      <a href="../5_css_practice_one/css_practice.html">css practice</a>
+      <a href="../6_box_model/box_model.html">box model</a>
+      <a href="../7_mid_century_modern_blog/mid_century.html">blog</a>
+    </nav>
+  <hr>
+  <p>Let me be your dreamer</p>
+   <img src="images/nara.jpg" 
+  alt="A sketch of a girl's head with her eyes closed. Japanese text across the top, English across the bottom, Thinker.">
+  <hr>
+  <footer>
+      <a href="https://www.instagram.com/e.vadreams/" target="_blank">instagram</a>
+      <a href="https://pin.it/1QbWIbCfs" target="_blank">pinterest</a>
+      <a href="https://open.spotify.com/user/02rfg5xn0w2y8rgi0jqzkyaez?si=c8db3a7e7b9d4f80" target="_blank">spotify</a>
+      <a href="mailto:evacoleman123@gmail.com" target="_blank">email</a>
+  </footer>
+  </body>
+</html>
