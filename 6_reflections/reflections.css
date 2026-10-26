@@ -31,13 +31,17 @@ a:active {
 }
 
 h4 {
+    padding: 2%;
     font-size: 30px;
     color: #4B3B40;
 }
 
 h5 {
     font-size: 25px;
+    padding: 2%;
+    background-color: #FEFEFE;
     color: #896C75;
+    text-align: center;
 }
 
 img {
@@ -51,6 +55,7 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-color: #FEFEFE;
 
 }
 

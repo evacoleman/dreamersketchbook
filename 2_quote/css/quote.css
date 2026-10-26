@@ -13,7 +13,52 @@ go ahead and play with these, can you get the colors to change? What do you noti
 
 body {
 
-    color: #26241C;
-    background-color: #F2F0D8;
+    color: #1D0C0F;
+    background-color: #896C75;
 }
 
+h2 {
+ color: #DBD1D4
+}
+
+h2, h1 {
+    text-align: center;
+}
+
+a {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #2F424C;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+    background-color: #DBD1D4;
+    border: 1px dotted #4B3B40;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #896C75;
+}
+
+a:active {
+    color: #2F424C
+}
+
+#author {
+    text-align: center;
+    color: #DBD1D4;
+}
+
+#quote {
+    padding-left: 2%;
+}
+
+h3{
+    color: #481E26;
+}
