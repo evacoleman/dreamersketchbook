@@ -1,4 +1,7 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #DFEEFC;
     color: #4B3B40;
 }
@@ -42,6 +45,8 @@ article {
 }
 
 img {
+    display: block;
+    margin: auto;
     width: 100%;
 
 }
@@ -64,8 +69,24 @@ h2 {
     padding-left: 2%;
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 #gif {
     position: absolute;
-    top: 10%;
-    left: 85%;
+    top: 5%;
+    left: 90%;
+}
+
+#gifb{
+    transition-duration: 5s;
+}
+
+#gifb:hover {
+    transform: scale(150%);
 }

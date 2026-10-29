@@ -1,4 +1,7 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #CFD7F2;
 }
 
@@ -65,5 +68,18 @@ footer {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+}
 
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: min-content;
+}
+#gif{
+    transition-duration: 5s;
+}
+
+#gif:hover {
+    transform: scale(150%);
 }

@@ -66,5 +66,12 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+}
 
+#gif{
+    transition-duration: 5s;
+}
+
+#gif:hover {
+    transform: scale(150%);
 }

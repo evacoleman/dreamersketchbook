@@ -45,7 +45,7 @@ h5 {
 }
 
 img {
-    display: inline-block;
+    display: block;
     margin: auto;
 }
 
@@ -61,4 +61,13 @@ footer{
 
 p {
     padding: 1%;
+}
+
+#gif{
+    background-color: #FEFEFE;
+    transition-duration: 5s;
+}
+
+#gif:hover {
+    transform: scale(150%);
 }
