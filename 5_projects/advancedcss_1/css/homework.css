@@ -1,0 +1,129 @@
+/* ==========================================================================
+   body override adjustments for this page
+  ========================================================================== */
+
+body {
+  padding: 80px;
+  background-image: linear-gradient(#191970, #333333, #000000);
+  height: 100vh;
+  position: relative;
+}
+
+/* instructions are embedded within this CSS file for the homework assignment */
+
+.circle {
+    background-color: #F6F1D5;
+    position: relative;
+    border-radius: 50%;
+      /* the border-radius property allows you to round corners.In this case, we've rounded all corners 50%,which creates a circle. Experiment with this property.*/
+    width: 40%;
+    height: auto;
+    padding-top: 40%;
+    box-shadow: -15px -5px 10px 15px rgba(246, 241, 213, .75);
+    cursor: crosshair;
+    transition-duration: 2s; 
+    /* box shadow can help add detail to elements. the values are: 
+    • offset of x-axis, 
+    • offset of y-axis 
+    • blur radius
+    • spread radius
+    • color
+    you need to include all of these properties in order for the shadow to work, play with the values until you are satisfied with the results.*/
+}
+
+#start {
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+
+/* 1.position the stars wherever you want by using absolute positioning. Let's get into the habit of using % instead of pixels - also, resize them as you see fit*/
+
+/* 2. Add a hover effect for each star using:
+transform: scale()
+transform: skew()
+transform: translate()
+transform: rotate() */
+
+/* 3. Now, if we want to slow those transform properties down we can add a transition-duration to each base or normal styling, go ahead and do this - play with the timing until you are satisfied*/
+
+/* 4. you can add multiple transforms to each star, however, you must make them part of the same property in order for all of them to work. Add a second transform to each star*/
+
+/* 5. add a hover effect for the .circle - make the box-shadow move from one side of the moon to the other and give it a duration of 2 seconds
+hint: adjust the first two value only if they are negative values to begin with, make them positive and see what happens
+*/
+
+/* 5. add more stars to the mix and experiment with placement and hover effects. */
+
+
+
+#starOne {
+  position: absolute;
+  top: 30%;
+  width: 25%;
+  transition-duration: 5s;
+
+}
+
+#starTwo {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 20%;
+  transition-duration: 10s;
+
+}
+
+#starThree {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 30%;
+
+}
+
+#starFour {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 35%;
+  transition-duration: 5s;
+}
+
+#starOne:hover {
+  transform: translate(400px, 500px) rotate(500deg);
+}
+
+#starTwo:hover {
+  transform: rotate(500deg);
+
+}
+
+#starThree:hover {
+  transform: scale(200%);
+
+}
+
+#starFour:hover {
+  transform: scale(50%) rotate(180deg);
+}
+
+.circle:hover {
+  transform: translate(15px, 5px);
+} 
+
+footer {
+  background-color: aliceblue;
+  color: #191970;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  padding: 1%;
+}
+
+
+
+
