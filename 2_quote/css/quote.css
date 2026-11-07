@@ -26,28 +26,33 @@ h2, h1 {
 }
 
 a {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: #2F424C;
+    color: #4B3B40;
     font-size: 20px;
     text-align: center;
-    padding: 5px 8px;
+    padding: 8px;
     text-decoration: none;
     background-color: #DBD1D4;
     border: 1px dotted #4B3B40;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    transition-duration: 1s;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #896C75;
+    text-decoration: none;
+    background-color: #896C75;
+    color: #DBD1D4;
+    animation-name: bounce;
+    animation-duration: 2s;
 }
 
 a:active {
-    color: #2F424C
+    background-color: aliceblue;
 }
 
 #author {
@@ -61,4 +66,17 @@ a:active {
 
 h3{
     color: #481E26;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

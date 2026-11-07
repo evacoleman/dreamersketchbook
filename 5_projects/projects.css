@@ -8,6 +8,7 @@
 body {
     color: #4B3B40;
     font-size: 15px;
+    background-color: #D6ECFE;
 }
 a {
     display: inline-flex;
@@ -22,12 +23,15 @@ a {
     padding: 5px 8px;
     text-decoration: none;
     border: 1px dotted #4B3B40;
+    border-radius: 10px;
     background-color: #F1F6FB;
+    transition-duration: 1s;
 
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #D6ECFE;
     color: #896C75;
 }
 
@@ -61,7 +65,7 @@ h2{
 
 .center{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 31%;
     color: #4B3B40;
     font-size: 30px;

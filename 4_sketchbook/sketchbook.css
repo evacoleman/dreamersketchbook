@@ -8,10 +8,8 @@
 }
 
 img{
-    width: 20%;
     height: auto;
     margin: auto;
-    border: 2px dotted #896C75;
 }
 
 h4 {
@@ -27,28 +25,33 @@ h2 {
 }
 
 a {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: #2F424C;
+    color: #4B3B40;
     font-size: 20px;
     text-align: center;
-    padding: 5px 8px;
+    padding: 8px;
     text-decoration: none;
     background-color: #DBD1D4;
     border: 1px dotted #4B3B40;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    transition-duration: 1s;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #896C75;
+    text-decoration: none;
+    background-color: #896C75;
+    color: #DBD1D4;
+    animation-name: bounce;
+    animation-duration: 2s;
 }
 
 a:active {
-    color: #2F424C
+    background-color: aliceblue;
 }
 
 style {
@@ -56,16 +59,57 @@ style {
 }
 
 footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: auto;
+    padding-top: 3%;
+}
 
+.marci {
+    position: absolute;
+    top: 25%;
+    left: 80%;
 }
 
 #nara {
+    border: 2px dotted #896C75;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 60%;
+    padding: 2%;
+}
+
+.container{
+    position: relative;
+    padding: 2%;
+}
+
+#contacts {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

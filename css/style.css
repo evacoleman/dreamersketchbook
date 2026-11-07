@@ -10,35 +10,44 @@ for now, you can leave these alone */
 /* Css is how we add all things style, below there are two simple styles added
 go ahead and play with these, can you get the colors to change? What do you notice?
  */
+html {
+    height: 100%;
+}
 
 body {
     color: #4B3B40;
     font-size: 15px;
+    min-height: 100vh;
 }
 
 a {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: #2F424C;
+    color: #4B3B40;
     font-size: 20px;
     text-align: center;
-    padding: 5px 8px;
+    padding: 8px;
     text-decoration: none;
     background-color: #DBD1D4;
     border: 1px dotted #4B3B40;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    transition-duration: 1s;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #896C75;
+    text-decoration: none;
+    background-color: #896C75;
+    color: #DBD1D4;
+    animation-name: bounce;
+    animation-duration: 2s;
 }
 
 a:active {
-    color: #2F424C
+    background-color: aliceblue;
 }
 
 h2 {
@@ -60,7 +69,7 @@ style{
     opacity: 0.5;
 }
 
-footer{
+ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -68,10 +77,37 @@ footer{
     align-items: center;
 }
 
-#gif{
-    transition-duration: 5s;
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
-#gif:hover {
-    transform: scale(150%);
+@media screen and (max-width: 600px){
+
+    h2 {
+        font-size: 60%;
+    }
+
+    a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 60%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #gif {
+        width: min-content;
+    }
 }
