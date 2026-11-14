@@ -33,13 +33,16 @@ a {
     background-color: #DBD1D4;
     border: 1px dotted #4B3B40;
     border-radius: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     margin: auto;
     transition-duration: 1s;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 a:hover {
@@ -63,9 +66,12 @@ footer{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
-    height: auto;
     padding-top: 3%;
+}
+
+#stars {
+    width: 100%;
+    height: auto;
 }
 
 .marci {
@@ -75,8 +81,6 @@ footer{
 }
 
 #nara {
-    border: 2px dotted #896C75;
-    border-radius: 10px;
     width: 30%;
     height: auto;
     position: absolute;
@@ -107,7 +111,7 @@ footer{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
     100% {
         transform: translateY(0);

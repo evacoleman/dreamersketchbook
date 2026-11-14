@@ -15,6 +15,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     color: #4B3B40;
     font-size: 15px;
     min-height: 100vh;
@@ -29,13 +32,16 @@ a {
     background-color: #DBD1D4;
     border: 1px dotted #4B3B40;
     border-radius: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     margin: auto;
     transition-duration: 1s;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 a:hover {
@@ -69,7 +75,7 @@ style{
     opacity: 0.5;
 }
 
- footer{
+footer{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -82,7 +88,7 @@ style{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
     100% {
         transform: translateY(0);
